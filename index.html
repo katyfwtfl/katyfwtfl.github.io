@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FASTer Way with Kate and Katy</title>
+    <title>Modern Image Column</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -28,10 +28,9 @@
         img {
             width: 100%; /* Full width of the container */
             height: auto; /* Maintain aspect ratio */
-            max-height: 300px; /* Set a maximum height */
-            object-fit: cover; /* Cover the area without distortion */
             border-radius: 10px; /* Rounded corners for images */
             transition: transform 0.3s ease; /* Smooth hover effect */
+            object-fit: contain; /* Ensure the entire image is visible */
         }
         img:hover {
             transform: scale(1.05); /* Slight zoom on hover */
