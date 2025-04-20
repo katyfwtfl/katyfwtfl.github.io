@@ -1,1 +1,53 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Image Column</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .image-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Space between images */
+            max-width: 400px; /* Limit the width of the column */
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        img {
+            width: 100%; /* Full width of the container */
+            height: auto;
+            border-radius: 10px; /* Rounded corners for images */
+            transition: transform 0.3s ease; /* Smooth hover effect */
+        }
+        img:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333; /* Darker text color */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-column">
+        <h1>Image Gallery</h1>
+        <img src="Kate___Katy_FASTer_Way_to_Fat_Loss_Page_1.png" alt="Image 1">
+        <img src="Kate___Katy_FASTer_Way_to_Fat_Loss_Page_2.png" alt="Image 2">
+        <img src="Kate___Katy_FASTer_Way_to_Fat_Loss_Page_3.png" alt="Image 3">
+        <img src="Kate___Katy_FASTer_Way_to_Fat_Loss_Page_4.png" alt="Image 4">
+    </div>
+</body>
+</html>
